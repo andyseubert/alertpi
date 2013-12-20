@@ -1,0 +1,11 @@
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+ 
+* * * * * /root/psmonitor.sh
+30 * * * * /root/checkip.pl  >/dev/null 2>&1 
+#* * * * * /usr/bin/fswebcam --no-banner -r 960x720 -d /dev/video0 /var/www/countercam.jpg  >/dev/null 2>&1 
+* * * * * /root/snapshot.py  >/dev/null 2>&1
+0 8 * * * /sbin/shutdown -r now
+0 */2 * * * /root/purgeimages.sh
