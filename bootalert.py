@@ -7,7 +7,7 @@ import sys
 import subprocess
 from subprocess import Popen
 import pynma
-p = pynma.PyNMA( "12842c4d5f6061eb9543674248c3518edda9dd83343ebe19" )
+p = pynma.PyNMA( "XXXXXXXX" )
 application="alertpi boot"
 event="alertpiOnBoot"
 description="alertpi just turned on"
